@@ -20,7 +20,7 @@ export const CampaignCard: React.FC<CampaignCardProps> = ({ campaign, onEdit, on
             <h3 className="text-xl font-semibold text-gray-900">{campaign.name}</h3>
             <span
               className={`px-2 py-1 text-xs font-medium rounded-full ${
-                campaign.status === "ACTIVE" ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"
+                campaign.status === "active" ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"
               }`}
             >
               {campaign.status}
@@ -31,11 +31,11 @@ export const CampaignCard: React.FC<CampaignCardProps> = ({ campaign, onEdit, on
 
         <div className="flex items-center gap-2 ml-4">
           <div className="flex items-center gap-2">
-            <span className="text-sm text-gray-600">{campaign.status === "ACTIVE" ? "Active" : "Inactive"}</span>
+            <span className="text-sm text-gray-600">{campaign.status === "active" ? "Active" : "Inactive"}</span>
             <label className="relative inline-flex items-center cursor-pointer">
               <input
                 type="checkbox"
-                checked={campaign.status === "ACTIVE"}
+                checked={campaign.status === "active"}
                 onChange={() => onStatusToggle(campaign)}
                 className="sr-only peer"
               />
