@@ -32,7 +32,7 @@
     "@types/mongoose": "^5.11.96",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.15.29",
-    "esbuild": "^0.25.4",
+    "esbuild": "^0.25.5",
     "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   }
